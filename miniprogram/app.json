@@ -1,0 +1,51 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#6dc0f7",
+    "navigationBarTitleText": "zs1843的小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "selectedIconPath": "images/wechatHL.png",
+        "iconPath": "images/wechat.png"
+      },
+      {
+        "pagePath": "pages/userConsole/userConsole",
+        "text": "日志",
+        "selectedIconPath": "images/wechatHL.png",        
+        "iconPath": "images/wechat.png"
+      },
+      {
+        "pagePath": "pages/userConsole/userConsole",
+        "text": "日志",
+        "selectedIconPath": "images/wechatHL.png",
+        "iconPath": "images/wechat.png"
+      },
+      {
+        "pagePath": "pages/userConsole/userConsole",
+        "text": "日志",
+        "selectedIconPath": "images/wechatHL.png",
+        "iconPath": "images/wechat.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
+}
