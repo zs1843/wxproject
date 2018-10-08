@@ -16,34 +16,6 @@
     "navigationBarTitleText": "zs1843的小程序",
     "navigationBarTextStyle": "black"
   },
-  "tabBar": {
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "首页",
-        "selectedIconPath": "images/wechatHL.png",
-        "iconPath": "images/wechat.png"
-      },
-      {
-        "pagePath": "pages/userConsole/userConsole",
-        "text": "日志",
-        "selectedIconPath": "images/wechatHL.png",        
-        "iconPath": "images/wechat.png"
-      },
-      {
-        "pagePath": "pages/userConsole/userConsole",
-        "text": "日志",
-        "selectedIconPath": "images/wechatHL.png",
-        "iconPath": "images/wechat.png"
-      },
-      {
-        "pagePath": "pages/userConsole/userConsole",
-        "text": "日志",
-        "selectedIconPath": "images/wechatHL.png",
-        "iconPath": "images/wechat.png"
-      }
-    ]
-  },
   "networkTimeout": {
     "request": 10000,
     "downloadFile": 10000
