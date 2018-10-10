@@ -4,10 +4,16 @@ const app = getApp()
 
 Page({
   data: {
-    current: 0
+    current: 0,
+    userInfo: {}
   },
   onReady: function () {
     this.load();
+    app.getUserInfo((res)=>{
+      this.setData({
+        userInfo: res,
+      })
+    })
   },
   load: function () {
     var n = 1;
@@ -19,7 +25,7 @@ Page({
         })
       }
       this.setData({
-        current: this.data.current + 1
+        current: this.data.current + 1,
       });
       if (this.data.current > 3)
         this.setData({

@@ -1,5 +1,9 @@
 <!--index.wxml-->
-<view class="container"> 
+<view class="container">
+<view>
+  {{userInfo.nickName}}
+</view>
+
   <view>
     <image class='logo' src='../../images/logo.png'></image>
     <view class='load'>

@@ -1,19 +1,29 @@
 <view class="container">
   <view hidden="{{hidden}}">
-  <loading>加载中...</loading>
-</view>
-
-<view class="game"> 
-    <!-- 矩阵 -->
-    <view>
-      <view class='row' wx:for="{{4}}"  wx:key="row.key" >
-        <view class='cell' wx:for="{{4}}" wx:key="cell.key">
-          <view class='cell-con cell-con-{{cell}}'>
-            {{}}
-          </view>
-        </view>
-      </view> 
+    <loading>加载中...</loading>
+  </view>
+  <view class="userInfo">
+    <view class="user">
+      <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+      <view>{{userInfo.nickName}}</view>
     </view>
+    <view class="score">
+      <view>Highest Score: {{1111}}</view>
+      <view>Score: {{222}}</view>
+    </view>
+    
+  </view>
+  <view class="game"> 
+      <!-- 矩阵 -->
+      <view bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+        <view class='row' wx:for="{{boardArr}}" wx:for-item="row" wx:key="row.key" >
+          <view class='cell' wx:for="{{row}}" wx:for-item="cell" wx:key="cell.key">
+            <view class="cell-con cell-con-{{cell}}">
+              {{cell || ''}}
+            </view>
+          </view>
+        </view> 
+      </view>
   </view>
 
   <!-- <map></map> -->

@@ -5,9 +5,9 @@
     "pages/2048/2048"
   ],
   "window": {
-    "backgroundColor": "#eaeaea",
+    "backgroundColor": "#c7c2bb",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#eaeaea",
+    "navigationBarBackgroundColor": "#c7c2bb",
     "navigationBarTitleText": "zs1843的小程序",
     "navigationBarTextStyle": "black"
   },
