@@ -13,13 +13,16 @@
     </view>
     
   </view>
+  <view align="center">
+    12121212
+  </view>
   <view class="game"> 
       <!-- 矩阵 -->
       <view bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
         <view class='row' wx:for="{{boardArr}}" wx:for-item="row" wx:key="row.key" >
           <view class='cell' wx:for="{{row}}" wx:for-item="cell" wx:key="cell.key">
             <view class="cell-con cell-con-{{cell}}">
-              {{cell || ''}}
+              <view></view>{{cell || ''}}
             </view>
           </view>
         </view> 

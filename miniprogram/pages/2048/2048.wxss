@@ -47,6 +47,10 @@
   -ms-touch-action: none;
   touch-action: none;
 }
+.row{
+  box-sizing: border-box;
+  overflow: hidden;
+}
 .cell {
   width: 19vw;
   height: 19vw; 
