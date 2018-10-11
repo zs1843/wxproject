@@ -60,10 +60,8 @@ Page({
     const [x, y] = [this.randomNum(0,3), this.randomNum(0,3)];
     this.data.boardArr.map((row,i)=>{
       if(x === i){
-        console.log(row, i)
         row.map((col, j)=>{
           if(y === j && !col){
-            console.log(col, j)
             this.fillCellValue(i, j)
           }
         })
@@ -87,8 +85,8 @@ Page({
     var list = this.combine(curList);
     var result = [[], [], [], []];
 
-    for (var i = 0; i < list; i++)
-      for (var j = 0; j < list[i]; j++) {
+    for (var i = 0; i < 4; i++){
+      for (var j = 0; j < 4; j++) {
         switch (dir) {
           case 'up':
             result[i][j] = list[j][i];
@@ -104,6 +102,8 @@ Page({
             break;
         }
       }
+    }
+      console.log(result)
     // 更新一下整个数组 
     this.setData({
       boardArr: result,
@@ -111,8 +111,6 @@ Page({
 
     // 再随机填充一个格子
     this.fillLocation();
-
-    return result;
   },
   canMoveDown: function () {
 
@@ -147,7 +145,7 @@ Page({
       }
     return list;
   },
-  // 将不为空的值提前，数字靠边
+  // 将不为空的值提前，数字靠边  [2,null,null,2] -->  [2,2,null,null]
   changeItem(item) {
     var cnt = 0;
     for (var i = 0; i < item.length; i++){
